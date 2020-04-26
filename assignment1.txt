@@ -1,0 +1,7 @@
+first_name = 'Quynh'
+user_inp = input('Please enter your name: ')
+
+if user_inp == first_name:
+    print(f'Hello, {user_inp}! The password is: @12')
+else:
+    print(f'Hello, {user_inp}! Incorrect name. See you later.')

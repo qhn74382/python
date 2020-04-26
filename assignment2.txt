@@ -1,0 +1,14 @@
+string1 = 'We are estimating the risk of death from corona virus. Please answer Yes or No to the following questions'
+print(string1)
+
+smoke = input('Do you smoke cigarette? ').lower().strip()
+age = input('Are you 75 years old or older? ').lower().strip()
+chronic = input('Do you have a severe chronic disease? ').lower().strip()
+immune = input('Is your immune system too weak? ').lower().strip()
+
+if age and smoke and chronic and immune == 'yes':
+    result = 'You are in risky group'
+else:
+    result = 'You are not in risky group'
+    
+print(result)
