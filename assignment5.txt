@@ -1,0 +1,17 @@
+# 1,1,2,3,5,8,13,21,34,55
+my_fib = []
+n = 0
+a = 0
+b = 1
+my_fib.append(b)
+
+for i in range(1, 10):
+  if n == 1:
+    my_fib.append(n)
+  elif n == 2:
+    my_fib.append(n)
+  c = a + b
+  a = b
+  b = c
+  my_fib.append(c)
+print(my_fib)
