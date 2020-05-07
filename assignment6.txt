@@ -1,0 +1,13 @@
+#Assignment 6 Prime
+prime_list = []
+
+for x in range(2, 101):
+  isPrime = True
+  for y in range(2, x):
+    if x % y == 0:
+      isPrime = False
+      break
+  if isPrime:
+    prime_list.append(x)
+
+print(prime_list)

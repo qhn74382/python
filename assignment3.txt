@@ -1,0 +1,28 @@
+num = input('Enter a number: ')
+temp = num
+n = len(str(num))
+result = 0
+
+while not num.isnumeric():
+  print('Do not use any entry other than numeric value')
+  num = input('Enter a number: ')
+  break
+
+while not num.isdecimal():
+  print('Please enter an integer')
+  num = input('Enter a number: ')
+  break
+
+while int(num) < 0:
+  print('Enter a positive number')
+  num = input('Enter a number: ')
+
+while temp > 0:
+    digit = temp % 10
+    result += digit ** n
+    temp //= 10    
+
+if result == num:
+    print(num, 'is an Armstrong number')  
+else:
+    print(num, 'is not an Armstrong number')
