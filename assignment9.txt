@@ -1,0 +1,16 @@
+string = input('Please enter a sentence: ')
+# string = 'hippo runs to us!'
+cast_string = list(string)
+# count = len(string)
+# print(count)
+# print(cast_string)
+
+dict_string = dict()
+
+for char in cast_string:
+    if char in dict_string:
+        dict_string[char] = dict_string[char] +1
+    else:
+        dict_string[char] = 1
+#     print(char, dict_string[char])
+print(dict_string)
