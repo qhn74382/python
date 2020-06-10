@@ -1,0 +1,12 @@
+from IPython.display import clear_output
+def sudoku_board(board):
+    clear_output()
+    print("- "*15)
+    for i, row in enumerate(board):
+        print((" {}  {}  {} | "*3).format(*[x for x in row]))
+        if i == 8:
+            print("- "*15)
+        elif i % 3 == 2:
+            print("- "*15)
+        else:
+            print()
